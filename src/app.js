@@ -52,7 +52,7 @@ export default class Container extends React.PureComponent {
           }]} />
         <div className={css.logo}>
           <img src={oktopusLogo} alt="Oktopus" />
-          <h1 style={h1Style}>HELLO WORLD - Coming soon</h1>
+          <h1 style={h1Style}>Coming soon</h1>
           <button onClick={this.changeColour}>Change colour</button>
         </div>
       </div>
