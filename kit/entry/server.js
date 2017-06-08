@@ -72,6 +72,8 @@ import App from 'src/app';
 // so we can serve static files
 import PATHS from 'config/paths';
 
+import changeColour from 'src/actions/change-colour.js';
+
 // ----------------------
 
 // Static file middleware
@@ -106,6 +108,10 @@ export function createReactHandler(css = [], scripts = [], chunkManifest = {}) {
 
     // Create a new Redux store for this request
     const store = createNewStore(client);
+
+    store.dispatch(
+      changeColour('green'),
+    );
 
     // Generate the HTML from our React tree.  We're wrapping the result
     // in `react-router`'s <StaticRouter> which will pull out URL info and

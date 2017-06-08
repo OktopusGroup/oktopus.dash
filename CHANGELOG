@@ -1,3 +1,10 @@
+0.2.0 - 2017-06-08
+——————————————————————————————————
+* Adds Oktopus logo
+* Adds sample Redux store code, to demonstrate app state management
+* Adds `react-redux` `@connect` HOC
+* Bumps kit to latest ReactQL kit
+
 0.1.0 - 2017-06-05
 ——————————————————————————————————
 * First commit
