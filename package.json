@@ -92,6 +92,8 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
-    "regenerator-runtime": "^0.10.5"
+    "redux-thunk": "^2.2.0",
+    "regenerator-runtime": "^0.10.5",
+    "seamless-immutable": "^7.1.2"
   }
 }

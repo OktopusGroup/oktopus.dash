@@ -1,13 +1,31 @@
+// ----------------------
+// IMPORTS
+
+/* NPM */
+import Immutable from 'seamless-immutable';
+
+// ----------------------
+
+// Colours to cycle through
 const colours = [
   'goldenrod',
   'hotpink',
   'green',
 ];
 
-export default function changeColour(colour = colours[0], action) {
-  if (action.type === 'CHANGE_COLOUR') {
-    return action.colour || colours[(colours.indexOf(colour) + 1) % colours.length];
-  }
+// Set the initial state, make it immutable
+const initialState = Immutable(colours[0]);
 
-  return colour;
-}
+export default {
+  colour: {
+    state: initialState,
+    reducer(state = initialState, action) {
+      if (action.type === 'CHANGE_COLOUR') {
+        return Immutable(
+          action.colour || colours[(colours.indexOf(state) + 1) % colours.length],
+        );
+      }
+      return state;
+    },
+  },
+};

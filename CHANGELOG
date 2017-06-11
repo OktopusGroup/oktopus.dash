@@ -1,3 +1,11 @@
+0.3.0 - 2017-06-08
+——————————————————————————————————
+* Adds custom Redux reducer/state logic to `kit/lib/redux.js`
+* Adds `seamless-immutable`, to ensure Redux state is immutable
+* Updates `colour` reducer to use immutable data types
+* Adds `redux-thunk`, for gaining access to `dispatch` function inside actions
+* Adds `unwind` function, for unwrapping reducer/state objects
+
 0.2.1 - 2017-06-08
 ——————————————————————————————————
 * Reverts 'coming soon' back to original state
