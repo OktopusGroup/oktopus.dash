@@ -1,3 +1,7 @@
+0.3.1 - 2017-06-08
+——————————————————————————————————
+* Updates README to show set-up instructions
+
 0.3.0 - 2017-06-08
 ——————————————————————————————————
 * Adds custom Redux reducer/state logic to `kit/lib/redux.js`
