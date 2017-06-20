@@ -7,6 +7,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Material Design for React
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import createMuiTheme from 'material-ui/styles/theme';
+import createPalette from 'material-ui/styles/palette';
+import { light } from 'material-ui/styles/palette';
+import { orange, deepOrange, red } from 'material-ui/styles/colors';
+
 // GraphQL
 import { graphql } from 'react-apollo';
 
@@ -130,6 +137,20 @@ const Styles = () => (
 // Export a simple component that allows clicking on list items to change
 // the route, along with a <Route> 'listener' that will conditionally display
 // the <Page> component based on the route name
+
+light.input.bottomLine = '#FF825C';
+light.input.disabled = '#ff4000';
+light.text.primary = '#FF825C';
+
+const muiTheme = createMuiTheme({
+  palette: createPalette({
+    primary: orange,
+    accent: deepOrange,
+    error: red,
+    type: 'light',
+  }),
+});
+
 export default () => (
   <div>
     <Helmet
@@ -153,15 +174,17 @@ export default () => (
       <li><Link to="/page/login">Login</Link></li>
     </ul>
     <hr />
-    <Switch>
-      <Route exact path="/" component={Home} />
+    <MuiThemeProvider theme={muiTheme}>
+      <Switch>
+        <Route exact path="/" component={Home} />
 
-      <Route path="/page/login" component={Login} />
+        <Route path="/page/login" component={Login} />
 
-      <Route path="/page/:name" component={Page} />
-      <Redirect from="/old/path" to="/new/path" />
-      <Route component={WhenNotFound} />
-    </Switch>
+        <Route path="/page/:name" component={Page} />
+        <Redirect from="/old/path" to="/new/path" />
+        <Route component={WhenNotFound} />
+      </Switch>
+    </MuiThemeProvider>
     <hr />
     <p>Runtime info:</p>
     <Stats />
