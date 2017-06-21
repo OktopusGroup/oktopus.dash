@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400,500");
+
+$apricot: #f8a36f;
+$grapefruit: #f56868;
+$white: #e1e1e1;
+$white2: #ffffff;
+$white-two: #ffffff;
+$aquamarine-two: #00d3bb;
+$brownish-grey: #666666;
+$black-50: rgba(0, 0, 0, 0.5);
+$blood-orange: #ff4a00;
+
+/* login */
+
+.rectangle {
+  position: relative;
+  width: 1438.6px;
+  height: 1022.1px;
+  background-image: linear-gradient(125deg, $apricot, $grapefruit);
+}
+.topbar-bg {
+  width: 1440px;
+  height: 42.8px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 $white;
+}
+.oktopus-logo {
+  position: absolute;
+  left: 35px;
+  top: 7px;
+  width: 69px;
+  height: 30px;
+  object-fit: contain;
+}
+.pagecenter-1 {
+  position: absolute;
+  left: 628.5px;
+  top: 9px;
+  width: 183px;
+  height: 25px;
+  object-fit: contain;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $aquamarine-two;
+
+  .text-style-1 {
+    font-family: MisterBrown;
+    font-size: 25px;
+    font-weight: normal;
+    color: $brownish-grey;
+  }
+}
+
+.your-website-is-about {
+  position: absolute;
+  left: 457px;
+  top: 149.9px;
+  width: 526px;
+  height: 44px;
+  font-family: Montserrat-ExtraLight;
+  font-size: 31px;
+  font-weight: 200;
+  line-height: 0.71;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 4px 2px rgba(245, 104, 104, 0.63);
+}
+
+/* login box */
+
+.oc_login_inputs {
+  margin: 0 18px;
+  text-align: center;
+
+  input {
+    padding: 10px 0 7px 0;
+    text-align: center;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    color: #2c2f30;
+  }
+}
+
+.oc_login_socials {
+  margin: 10px auto;
+  text-align: center;
+
+  .face_book {
+    margin: 5px;
+    width: 39px;
+    height: 39px;
+    object-fit: contain;
+  }
+
+  .linked_in {
+    margin: 5px;
+    width: 40px;
+    height: 39px;
+    object-fit: contain;
+  }
+}
+
+.oc_login_button {
+  width: 137.1px;
+  height: 34.3px;
+  padding: 0 !important;
+  border-radius: 2px;
+  background-image: linear-gradient(to bottom, $apricot, $grapefruit);
+  box-shadow: 0 1px 1px 0 rgba(196, 196, 196, 0.5);
+}
+.oc_login_button_text {
+  width: 49px;
+  height: 32px;
+  object-fit: contain;
+  font-family: MisterBrown;
+  font-size: 32px;
+  text-align: center;
+  color: $white;
+}
+//TODO: fix css order problem
+.oc_login_forgot {
+  width: 87px !important;
+  height: 13px !important;
+  font-family: Montserrat !important;
+  font-size: 10px !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+  color: #2c2f30 !important;
+}
+
+.combined-shape {
+  position: absolute;
+  left: 612.1px;
+  top: 272.3px;
+  width: 215.3px;
+  height: 297.7px;
+  border-radius: 5px;
+  background-color: $white-two;
+  box-shadow: inset 0 0.2px 1px 0 $black-50;
+  border: solid 1px $white-two;
+}
+
+.screen-shot-2017-02-11-at-7-08-42-pm {
+  position: relative;
+  display: block;
+  /* left: 24.1px; */
+  /* top: 42.1px; */
+  margin: 20px auto;
+  width: 133.1px;
+  height: 42.9px;
+  object-fit: contain;
+}
+
+.line {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 178.7px;
+  height: 0px;
+  box-shadow: 0 0.5px 1px 0 rgba(196, 196, 196, 0.5);
+  border: solid 0.5px $blood-orange;
+}
