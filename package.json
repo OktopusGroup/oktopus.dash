@@ -4,6 +4,9 @@
   "description": "Oktopus front-end web server",
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "node": "7.10.0"
+  },
   "scripts": {
     "browser": "cross-env NODE_ENV=development WEBPACK_CONFIG=browser_dev webpack-dev-server",
     "build": "cross-env NODE_ENV=production WEBPACK_CONFIG=browser_prod,server_prod webpack --colors",
