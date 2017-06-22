@@ -34,8 +34,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="242">
+              <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -59,6 +59,7 @@
       <find>run-p</find>
       <find>run-</find>
       <find>cross-env</find>
+      <find>material</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,7 +238,7 @@
       <option name="presentableId" value="Default" />
       <updated>1497353207306</updated>
       <workItem from="1497353208882" duration="1560000" />
-      <workItem from="1498037514670" duration="10640000" />
+      <workItem from="1498037514670" duration="10908000" />
     </task>
     <task id="LOCAL-00001" summary="# initial commit">
       <created>1497353772973</created>
@@ -274,11 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498101676913</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="# specify node.js version for Heroku">
+      <created>1498104695418</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1498104695418</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12200000" />
+    <option name="totallyTimeSpent" value="12468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="6" />
@@ -325,7 +333,8 @@
     <MESSAGE value="# login page done" />
     <MESSAGE value="# set up production version for heroku.com" />
     <MESSAGE value="# commit mission file server.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="# commit mission file server.js" />
+    <MESSAGE value="# specify node.js version for Heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="# specify node.js version for Heroku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -399,8 +408,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="242">
+          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding />
         </state>
       </provider>
