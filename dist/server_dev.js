@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 57);
+/******/ 	return __webpack_require__(__webpack_require__.s = 55);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -80,24 +80,6 @@ module.exports = require("prop-types");
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = changeColour;
-function changeColour(colour) {
-  return {
-    type: 'CHANGE_COLOUR',
-    colour
-  };
-}
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -120,51 +102,45 @@ module.exports = {
 };
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = require("chalk");
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-apollo");
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-helmet");
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("seamless-immutable");
-
-/***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _chalk = __webpack_require__(4);
+var _chalk = __webpack_require__(3);
 
 var _chalk2 = _interopRequireDefault(_chalk);
 
-var _env = __webpack_require__(15);
+var _env = __webpack_require__(13);
 
-var _console = __webpack_require__(14);
+var _console = __webpack_require__(12);
 
-var _server = __webpack_require__(12);
+var _server = __webpack_require__(10);
 
 var _server2 = _interopRequireDefault(_server);
 
@@ -220,7 +196,7 @@ _server2.default.then(({ router, app }) => {
 });
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -229,7 +205,7 @@ _server2.default.then(({ router, app }) => {
 // ----------------------
 // IMPORTS
 
-const path = __webpack_require__(51);
+const path = __webpack_require__(48);
 
 // ----------------------
 
@@ -273,7 +249,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -293,7 +269,7 @@ const BUNDLE_ANALYZER = exports.BUNDLE_ANALYZER = {
 };
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -305,118 +281,67 @@ Object.defineProperty(exports, "__esModule", {
 exports.staticMiddleware = staticMiddleware;
 exports.createReactHandler = createReactHandler;
 
-__webpack_require__(38);
+__webpack_require__(35);
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _server = __webpack_require__(52);
+var _server = __webpack_require__(49);
 
 var _server2 = _interopRequireDefault(_server);
 
-var _koa = __webpack_require__(39);
+var _koa = __webpack_require__(36);
 
 var _koa2 = _interopRequireDefault(_koa);
 
-var _reactApollo = __webpack_require__(5);
+var _reactApollo = __webpack_require__(4);
 
-var _koaSend = __webpack_require__(42);
+var _koaSend = __webpack_require__(39);
 
 var _koaSend2 = _interopRequireDefault(_koaSend);
 
-var _koaHelmet = __webpack_require__(40);
+var _koaHelmet = __webpack_require__(37);
 
 var _koaHelmet2 = _interopRequireDefault(_koaHelmet);
 
-var _koaRouter = __webpack_require__(41);
+var _koaRouter = __webpack_require__(38);
 
 var _koaRouter2 = _interopRequireDefault(_koaRouter);
 
-var _microseconds = __webpack_require__(50);
+var _microseconds = __webpack_require__(47);
 
 var _microseconds2 = _interopRequireDefault(_microseconds);
 
-var _reactRouter = __webpack_require__(54);
+var _reactRouter = __webpack_require__(51);
 
-var _reactHelmet = __webpack_require__(6);
+var _reactHelmet = __webpack_require__(5);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _apollo = __webpack_require__(13);
+var _apollo = __webpack_require__(11);
 
-var _redux = __webpack_require__(16);
+var _redux = __webpack_require__(14);
 
 var _redux2 = _interopRequireDefault(_redux);
 
-var _ssr = __webpack_require__(18);
+var _ssr = __webpack_require__(16);
 
 var _ssr2 = _interopRequireDefault(_ssr);
 
-var _app = __webpack_require__(19);
+var _app = __webpack_require__(17);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _paths = __webpack_require__(10);
+var _paths = __webpack_require__(8);
 
 var _paths2 = _interopRequireDefault(_paths);
-
-var _changeColour = __webpack_require__(2);
-
-var _changeColour2 = _interopRequireDefault(_changeColour);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ----------------------
 
 // Static file middleware
-
-
-// Import paths.  We'll use this to figure out where our public folder is
-// so we can serve static files
-
-
-// Initial view to send back HTML render
-
-
-/* Local */
-
-// Grab the shared Apollo Client
-
-
-// React Router HOC for figuring out the exact React hierarchy to display
-// based on the URL
-
-
-// Koa Router, for handling URL requests
-
-
-// Static file handler
-
-
-// Koa 2 web server.  Handles incoming HTTP requests, and will serve back
-// the React render, or any of the static assets being compiled
-
-
-// React UI
-function staticMiddleware() {
-  return async function staticMiddlewareHandler(ctx, next) {
-    try {
-      if (ctx.path !== '/') {
-        return await (0, _koaSend2.default)(ctx, ctx.path,  false ? {
-          root: _paths2.default.public,
-          immutable: true
-        } : {
-          root: _paths2.default.distDev
-        });
-      }
-    } catch (e) {/* Errors will fall through */}
-    return next();
-  };
-}
-
-// Function to create a React handler, per the environment's correct
-// manifest files
 
 
 // App entry point
@@ -460,6 +385,53 @@ function staticMiddleware() {
 /* NPM */
 
 // Patch global.`fetch` so that Apollo calls to GraphQL work
+function staticMiddleware() {
+  return async function staticMiddlewareHandler(ctx, next) {
+    try {
+      if (ctx.path !== '/') {
+        return await (0, _koaSend2.default)(ctx, ctx.path,  false ? {
+          root: _paths2.default.public,
+          immutable: true
+        } : {
+          root: _paths2.default.distDev
+        });
+      }
+    } catch (e) {/* Errors will fall through */}
+    return next();
+  };
+}
+
+// Function to create a React handler, per the environment's correct
+// manifest files
+
+
+// Import paths.  We'll use this to figure out where our public folder is
+// so we can serve static files
+
+
+// Initial view to send back HTML render
+
+
+/* Local */
+
+// Grab the shared Apollo Client
+
+
+// React Router HOC for figuring out the exact React hierarchy to display
+// based on the URL
+
+
+// Koa Router, for handling URL requests
+
+
+// Static file handler
+
+
+// Koa 2 web server.  Handles incoming HTTP requests, and will serve back
+// the React render, or any of the static assets being compiled
+
+
+// React UI
 function createReactHandler(css = [], scripts = [], chunkManifest = {}) {
   return async function reactHandler(ctx) {
     const routeContext = {};
@@ -469,8 +441,6 @@ function createReactHandler(css = [], scripts = [], chunkManifest = {}) {
 
     // Create a new Redux store for this request
     const store = (0, _redux2.default)(client);
-
-    store.dispatch((0, _changeColour2.default)('green'));
 
     // Generate the HTML from our React tree.  We're wrapping the result
     // in `react-router`'s <StaticRouter> which will pull out URL info and
@@ -535,21 +505,21 @@ exports.default = async function server() {
     // Set-up a general purpose /ping route to check the server is alive
     get('/ping', async ctx => {
       ctx.body = 'pong';
-    }
+    })
 
     // Favicon.ico.  By default, we'll serve this as a 204 No Content.
     // If /favicon.ico is available as a static file, it'll try that first
-    ).get('/favicon.ico', async ctx => {
+    .get('/favicon.ico', async ctx => {
       ctx.res.statusCode = 204;
     }),
     app: new _koa2.default()
 
     // Preliminary security for HTTP headers
-    .use((0, _koaHelmet2.default)()
+    .use((0, _koaHelmet2.default)())
 
     // Error wrapper.  If an error manages to slip through the middleware
     // chain, it will be caught and logged back here
-    ).use(async (ctx, next) => {
+    .use(async (ctx, next) => {
       try {
         await next();
       } catch (e) {
@@ -559,11 +529,11 @@ exports.default = async function server() {
         console.log('Error', e.message);
         ctx.body = 'There was an error. Please try again later.';
       }
-    }
+    })
 
     // It's useful to see how long a request takes to respond.  Add the
     // timing to a HTTP Response header
-    ).use(async (ctx, next) => {
+    .use(async (ctx, next) => {
       const start = _microseconds2.default.now();
       await next();
       const end = _microseconds2.default.parse(_microseconds2.default.since(start));
@@ -574,7 +544,7 @@ exports.default = async function server() {
 }();
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -586,9 +556,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.browserClient = browserClient;
 exports.serverClient = serverClient;
 
-var _reactApollo = __webpack_require__(5);
+var _reactApollo = __webpack_require__(4);
 
-var _project = __webpack_require__(11);
+var _project = __webpack_require__(9);
 
 // ----------------------
 
@@ -628,7 +598,7 @@ function serverClient() {
 }
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -639,15 +609,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.logServerStarted = logServerStarted;
 
-var _boxen = __webpack_require__(36);
+var _boxen = __webpack_require__(33);
 
 var _boxen2 = _interopRequireDefault(_boxen);
 
-var _chalk = __webpack_require__(4);
+var _chalk = __webpack_require__(3);
 
 var _chalk2 = _interopRequireDefault(_chalk);
 
-var _ip = __webpack_require__(37);
+var _ip = __webpack_require__(34);
 
 var _ip2 = _interopRequireDefault(_ip);
 
@@ -685,7 +655,7 @@ function logServerStarted(opt = {}) {
 // Display a border around a message
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -720,7 +690,7 @@ const defaultPorts = {
 };
 
 // Determines whether we're currently running in production
-const isProduction = !!"development" === 'production';
+const isProduction = "development" === 'production';
 const isServer = "boolean" !== 'undefined' && true;
 
 // Returns the prefix of the variable on `process.env` that determines
@@ -787,7 +757,7 @@ function getURL() {
 }
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -811,28 +781,21 @@ own reducers for store state outside of Apollo
 /* NPM */
 
 
-/* Local */
-
-// Reducers
-
-
 exports.default = createNewStore;
 
-var _redux = __webpack_require__(55);
+var _redux = __webpack_require__(52);
 
-var _reduxThunk = __webpack_require__(56);
+var _reduxThunk = __webpack_require__(53);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _seamlessImmutable = __webpack_require__(8);
+var _seamlessImmutable = __webpack_require__(54);
 
 var _seamlessImmutable2 = _interopRequireDefault(_seamlessImmutable);
 
-var _colours = __webpack_require__(22);
-
-var _colours2 = _interopRequireDefault(_colours);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/* Local */
 
 // ----------------------
 
@@ -840,7 +803,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const hasState = !!(!true && window.__STATE__);
 
 // All reducers, in one array
-const reducers = [_colours2.default];
+const reducers = [/* TODO add custom reducers */];
 
 // Helper function that 'unwinds' the { reducerKey {state, reducer} } format
 // from each imported reducer, and either returns the `reducer` function (if
@@ -879,7 +842,7 @@ function createNewStore(apolloClient) {
 }
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -898,7 +861,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -982,7 +945,7 @@ Redirect.defaultProps = {
 };
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1049,7 +1012,7 @@ Html.propTypes = {
 exports.default = Html;
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1059,84 +1022,43 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dec, _class; // ----------------------
-// IMPORTS
-
-/* NPM */
-
-// React
-
-
-// Routing
-
-
-// Pages
-
-
-// Material Design for React
-
-
-/* Local */
-
-// NotFound 404 handler for unknown routes
-
-
-// Actions
-
-
-// Images
-
-
-// CSS
-
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(1);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _reactHelmet = __webpack_require__(6);
+var _reactHelmet = __webpack_require__(5);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _reactRedux = __webpack_require__(53);
+var _reactRouterDom = __webpack_require__(6);
 
-var _reactRouterDom = __webpack_require__(7);
-
-var _login = __webpack_require__(21);
+var _login = __webpack_require__(19);
 
 var _login2 = _interopRequireDefault(_login);
 
-var _MuiThemeProvider = __webpack_require__(46);
+var _MuiThemeProvider = __webpack_require__(43);
 
 var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 
-var _theme = __webpack_require__(49);
+var _theme = __webpack_require__(46);
 
 var _theme2 = _interopRequireDefault(_theme);
 
-var _palette = __webpack_require__(48);
+var _palette = __webpack_require__(45);
 
 var _palette2 = _interopRequireDefault(_palette);
 
-var _colors = __webpack_require__(47);
+var _colors = __webpack_require__(44);
 
-var _routing = __webpack_require__(17);
+var _routing = __webpack_require__(15);
 
-var _changeColour = __webpack_require__(2);
-
-var _changeColour2 = _interopRequireDefault(_changeColour);
-
-var _oktopus = __webpack_require__(25);
+var _oktopus = __webpack_require__(22);
 
 var _oktopus2 = _interopRequireDefault(_oktopus);
 
-__webpack_require__(24);
+__webpack_require__(21);
 
-var _styles = __webpack_require__(23);
+var _styles = __webpack_require__(20);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -1144,46 +1066,37 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // ----------------------
 
-let Home = (_dec = (0, _reactRedux.connect)(state => ({ colour: state.colour })), _dec(_class = class Home extends _react2.default.PureComponent {
-  constructor(...args) {
-    var _temp;
+// CSS
 
-    return _temp = super(...args), this.changeColour = () => {
-      this.props.dispatch((0, _changeColour2.default)());
-    }, _temp;
-  }
 
-  render() {
-    const h1Style = {
-      backgroundColor: this.props.colour
-    };
+/* Local */
 
-    return _react2.default.createElement(
-      'div',
-      { className: _styles2.default.logo },
-      _react2.default.createElement('img', { src: _oktopus2.default, alt: 'Oktopus' }),
-      _react2.default.createElement(
-        'h1',
-        { style: h1Style },
-        'Coming soon'
-      ),
-      _react2.default.createElement(
-        'button',
-        { onClick: this.changeColour },
-        'Change colour'
-      )
-    );
-  }
-}) || _class);
+// NotFound 404 handler for unknown routes
+
+
+// Material Design for React
+
+
+// Routing
+// ----------------------
+// IMPORTS
+
+/* NPM */
+
+// React
+const Home = () => _react2.default.createElement(
+  'div',
+  { className: _styles2.default.logo },
+  _react2.default.createElement('img', { src: _oktopus2.default, alt: 'Oktopus' })
+);
 
 // Create a route that will be displayed when the code isn't found
 
-Home.propTypes = {
-  colour: _propTypes2.default.string
-};
-Home.defaultProps = {
-  colour: 'goldenrod'
-};
+
+// Images
+
+
+// Pages
 const WhenNotFound = () => _react2.default.createElement(
   _routing.NotFound,
   null,
@@ -1215,8 +1128,7 @@ exports.default = () => _react2.default.createElement(
     meta: [{
       name: 'description',
       content: 'Oktopus front-end'
-    }]
-  }),
+    }] }),
   _react2.default.createElement(
     'ul',
     null,
@@ -1253,7 +1165,7 @@ exports.default = () => _react2.default.createElement(
 );
 
 /***/ }),
-/* 20 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1271,51 +1183,51 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _TextField = __webpack_require__(45);
+var _TextField = __webpack_require__(42);
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
-var _Button = __webpack_require__(43);
+var _Button = __webpack_require__(40);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _IconButton = __webpack_require__(44);
+var _IconButton = __webpack_require__(41);
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
-var _styles = __webpack_require__(3);
+var _styles = __webpack_require__(2);
 
 var _styles2 = _interopRequireDefault(_styles);
 
-var _screenShot20170211At70842Pm = __webpack_require__(33);
+var _screenShot20170211At70842Pm = __webpack_require__(30);
 
 var _screenShot20170211At70842Pm2 = _interopRequireDefault(_screenShot20170211At70842Pm);
 
-var _screenShot20170211At70842Pm2x = __webpack_require__(34);
+var _screenShot20170211At70842Pm2x = __webpack_require__(31);
 
 var _screenShot20170211At70842Pm2x2 = _interopRequireDefault(_screenShot20170211At70842Pm2x);
 
-var _screenShot20170211At70842Pm3x = __webpack_require__(35);
+var _screenShot20170211At70842Pm3x = __webpack_require__(32);
 
 var _screenShot20170211At70842Pm3x2 = _interopRequireDefault(_screenShot20170211At70842Pm3x);
 
-var _faceBook = __webpack_require__(27);
+var _faceBook = __webpack_require__(24);
 
 var _faceBook2 = _interopRequireDefault(_faceBook);
 
-var _linkedIn = __webpack_require__(28);
+var _linkedIn = __webpack_require__(25);
 
 var _linkedIn2 = _interopRequireDefault(_linkedIn);
 
-var _login = __webpack_require__(29);
+var _login = __webpack_require__(26);
 
 var _login2 = _interopRequireDefault(_login);
 
-var _login2x = __webpack_require__(30);
+var _login2x = __webpack_require__(27);
 
 var _login2x2 = _interopRequireDefault(_login2x);
 
-var _login3x = __webpack_require__(31);
+var _login3x = __webpack_require__(28);
 
 var _login3x2 = _interopRequireDefault(_login3x);
 
@@ -1402,7 +1314,7 @@ Box.propTypes = {};
 exports.default = Box;
 
 /***/ }),
-/* 21 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1420,19 +1332,19 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _box = __webpack_require__(20);
+var _box = __webpack_require__(18);
 
 var _box2 = _interopRequireDefault(_box);
 
-var _oktopusLogo = __webpack_require__(32);
+var _oktopusLogo = __webpack_require__(29);
 
 var _oktopusLogo2 = _interopRequireDefault(_oktopusLogo);
 
-var _pagecenter3x = __webpack_require__(26);
+var _pagecenter3x = __webpack_require__(23);
 
 var _pagecenter3x2 = _interopRequireDefault(_pagecenter3x);
 
-var _styles = __webpack_require__(3);
+var _styles = __webpack_require__(2);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -1469,48 +1381,7 @@ Login.propTypes = {
 exports.default = Login;
 
 /***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _seamlessImmutable = __webpack_require__(8);
-
-var _seamlessImmutable2 = _interopRequireDefault(_seamlessImmutable);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// ----------------------
-
-// Colours to cycle through
-const colours = ['goldenrod', 'hotpink', 'green'];
-
-// Set the initial state, make it immutable
-// ----------------------
-// IMPORTS
-
-/* NPM */
-const initialState = (0, _seamlessImmutable2.default)(colours[0]);
-
-exports.default = {
-  colour: {
-    state: initialState,
-    reducer(state = initialState, action) {
-      if (action.type === 'CHANGE_COLOUR') {
-        return (0, _seamlessImmutable2.default)(action.colour || colours[(colours.indexOf(state) + 1) % colours.length]);
-      }
-      return state;
-    }
-  }
-};
-
-/***/ }),
-/* 23 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -1519,208 +1390,209 @@ module.exports = {
 };
 
 /***/ }),
-/* 24 */
+/* 21 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 25 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/oktopus.9a2840858bb923b6ab1bac036fa9c340.png";
 
 /***/ }),
-/* 26 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/1-pagecenter@3x.bfe1bfcd0d6df4c0e4b359bd19fe0225.png";
 
 /***/ }),
-/* 27 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/face-book.16a2623d4090227f26e3f60032ae1fc6.svg";
 
 /***/ }),
-/* 28 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/linked-in.bbb5d934e245bd3fbb247b80ccf85e09.svg";
 
 /***/ }),
-/* 29 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/login.e11406f2bc4d4dd99162c040f0289585.png";
 
 /***/ }),
-/* 30 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/login@2x.7304e75a4e2f244ee1af77afacaab734.png";
 
 /***/ }),
-/* 31 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/login@3x.f09969f2bcb3483f075965c5f83be981.png";
 
 /***/ }),
-/* 32 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/oktopus-logo.bb9c4302e6bbdcf5cefe103d30462db5.svg";
 
 /***/ }),
-/* 33 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/screen-shot-2017-02-11-at-7-08-42-pm.2bdb54b436e19b061d22af608b99cd08.png";
 
 /***/ }),
-/* 34 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/screen-shot-2017-02-11-at-7-08-42-pm@2x.954b7fb8297a283d68ce89ccfea784e6.png";
 
 /***/ }),
-/* 35 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/img/screen-shot-2017-02-11-at-7-08-42-pm@3x.148c208bd6d8c6a19d9978758ec2cd4d.png";
 
 /***/ }),
-/* 36 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = require("boxen");
 
 /***/ }),
-/* 37 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("ip");
 
 /***/ }),
-/* 38 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-fetch");
 
 /***/ }),
-/* 39 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = require("koa");
 
 /***/ }),
-/* 40 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("koa-helmet");
 
 /***/ }),
-/* 41 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("koa-router");
 
 /***/ }),
-/* 42 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("koa-send");
 
 /***/ }),
-/* 43 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("material-ui/Button");
 
 /***/ }),
-/* 44 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("material-ui/IconButton");
 
 /***/ }),
-/* 45 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("material-ui/TextField");
 
 /***/ }),
-/* 46 */
+/* 43 */
 /***/ (function(module, exports) {
 
 module.exports = require("material-ui/styles/MuiThemeProvider");
 
 /***/ }),
-/* 47 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = require("material-ui/styles/colors");
 
 /***/ }),
-/* 48 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = require("material-ui/styles/palette");
 
 /***/ }),
-/* 49 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = require("material-ui/styles/theme");
 
 /***/ }),
-/* 50 */
+/* 47 */
 /***/ (function(module, exports) {
 
 module.exports = require("microseconds");
 
 /***/ }),
-/* 51 */
+/* 48 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 52 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom/server");
 
 /***/ }),
-/* 53 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-redux");
-
-/***/ }),
-/* 54 */
+/* 50 */,
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router");
 
 /***/ }),
-/* 55 */
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux");
 
 /***/ }),
-/* 56 */
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
 
 /***/ }),
-/* 57 */
+/* 54 */
+/***/ (function(module, exports) {
+
+module.exports = require("seamless-immutable");
+
+/***/ }),
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(9);
+module.exports = __webpack_require__(7);
 
 
 /***/ })
