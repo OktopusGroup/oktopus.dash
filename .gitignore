@@ -42,4 +42,3 @@ jspm_packages
 # Distribution
 dist/dev
 .idea
-.idea/workspace.xml
