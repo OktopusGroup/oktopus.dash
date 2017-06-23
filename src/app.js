@@ -5,9 +5,7 @@
 
 // React
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { connect } from 'react-redux';
 
 // Routing
 import {
@@ -30,9 +28,6 @@ import { orange, deepOrange, red } from 'material-ui/styles/colors';
 // NotFound 404 handler for unknown routes
 import { NotFound } from 'kit/lib/routing';
 
-// Actions
-import changeColour from 'src/actions/change-colour';
-
 // Images
 import oktopusLogo from 'src/images/oktopus.png';
 
@@ -42,34 +37,11 @@ import css from './styles.scss';
 
 // ----------------------
 
-@connect(state => ({ colour: state.colour }))
-class Home extends React.PureComponent {
-  static propTypes = {
-    colour: PropTypes.string,
-  }
-
-  static defaultProps = {
-    colour: 'goldenrod',
-  }
-
-  changeColour = () => {
-    this.props.dispatch(changeColour());
-  }
-
-  render() {
-    const h1Style = {
-      backgroundColor: this.props.colour,
-    };
-
-    return (
-      <div className={css.logo}>
-        <img src={oktopusLogo} alt="Oktopus"/>
-        <h1 style={h1Style}>Coming soon</h1>
-        <button onClick={this.changeColour}>Change colour</button>
-      </div>
-    );
-  }
-}
+const Home = () => (
+  <div className={css.logo}>
+    <img src={oktopusLogo} alt="Oktopus" />
+  </div>
+);
 
 // Create a route that will be displayed when the code isn't found
 const WhenNotFound = () => (
@@ -98,8 +70,7 @@ export default () => (
       meta={[{
         name: 'description',
         content: 'Oktopus front-end',
-      }]}
-    />
+      }]} />
     <ul>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/page/login">Login</Link></li>

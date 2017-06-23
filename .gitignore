@@ -1,3 +1,7 @@
+# Editors
+.idea
+.idea/workspace.xml
+
 # Meta
 **/.DS_Store
 
@@ -41,4 +45,3 @@ jspm_packages
 
 # Distribution
 dist/dev
-.idea
