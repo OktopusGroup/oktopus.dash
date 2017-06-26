@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 55);
+/******/ 	return __webpack_require__(__webpack_require__.s = 54);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -83,12 +83,17 @@ module.exports = require("prop-types");
 /***/ (function(module, exports) {
 
 module.exports = {
-	"rectangle": "rectangle-1SVS6NPqU0yRdzCNeJbvWI",
-	"topbar-bg": "topbar-bg-31sIoHSemwpfhBx1nn74Ko",
-	"oktopus-logo": "oktopus-logo-23zJkGHTG34LKO6cjlqdBP",
-	"pagecenter-1": "pagecenter-1-KPFDPGNNMG_a9VaIDFh3b",
-	"text-style-1": "text-style-1-1v8bI924aVg5sUm-VjW8SE",
-	"your-website-is-about": "your-website-is-about-2a7L-8UYIzWm8XiklfRAJL",
+	"oc_container": "oc_container-tby3JHSq_-Vyu6LP8Si4U",
+	"oc_container_apricot_grapefruit": "oc_container_apricot_grapefruit-Qs0pzBR8pk_1H3N5eEwE4",
+	"oc_container_content": "oc_container_content-1JMdPw98uvUlEm0hV4fdP4",
+	"oc_container_topbar": "oc_container_topbar-4vQi7cbHJptMLJqjfTFGV",
+	"oc_container_transparent": "oc_container_transparent-35Titj6wX-MFbevBljDo9O",
+	"oc_container_white": "oc_container_white-10EQG2Y43BeywQYdOs1moR",
+	"oc_login_box": "oc_login_box-3jZAL8lFntZMlXRDfRNN7i",
+	"oc_login_container": "oc_login_container-3-ID4yJ9nHlydgIRxxtKJ_",
+	"oc_login_title2": "oc_login_title2-2BXhzpO_kdfx823I65FCT5",
+	"oc_logo": "oc_logo-1lFCpEhKHDbOWmBkld7Qu-",
+	"oc_login_title": "oc_login_title-pXdfYU9H3ENtkldSFToZU",
 	"oc_login_inputs": "oc_login_inputs-XOr69NEO-BOnj0HLehxu8",
 	"oc_login_socials": "oc_login_socials-3JEchWxSBu36WOOKONtZkv",
 	"face_book": "face_book-_RgoGMBv16wZrrUuSiRKH",
@@ -96,7 +101,6 @@ module.exports = {
 	"oc_login_button": "oc_login_button-2KJ1pkj65vC1cPP7thEd8r",
 	"oc_login_button_text": "oc_login_button_text-11zS5wZGpDTwkPQLQ_P0Fb",
 	"oc_login_forgot": "oc_login_forgot-1P7IiMPHdmhgvTbTXapD4C",
-	"combined-shape": "combined-shape-3zm9vHew9_9v8Djid6LKyu",
 	"screen-shot-2017-02-11-at-7-08-42-pm": "screen-shot-2017-02-11-at-7-08-42-pm-2oRdDAFTfoWPfI4-f93GJ5",
 	"line": "line-1NEDOOpc80eC_2dp2INbb"
 };
@@ -313,7 +317,7 @@ var _microseconds = __webpack_require__(47);
 
 var _microseconds2 = _interopRequireDefault(_microseconds);
 
-var _reactRouter = __webpack_require__(51);
+var _reactRouter = __webpack_require__(50);
 
 var _reactHelmet = __webpack_require__(5);
 
@@ -505,21 +509,21 @@ exports.default = async function server() {
     // Set-up a general purpose /ping route to check the server is alive
     get('/ping', async ctx => {
       ctx.body = 'pong';
-    })
+    }
 
     // Favicon.ico.  By default, we'll serve this as a 204 No Content.
     // If /favicon.ico is available as a static file, it'll try that first
-    .get('/favicon.ico', async ctx => {
+    ).get('/favicon.ico', async ctx => {
       ctx.res.statusCode = 204;
     }),
     app: new _koa2.default()
 
     // Preliminary security for HTTP headers
-    .use((0, _koaHelmet2.default)())
+    .use((0, _koaHelmet2.default)()
 
     // Error wrapper.  If an error manages to slip through the middleware
     // chain, it will be caught and logged back here
-    .use(async (ctx, next) => {
+    ).use(async (ctx, next) => {
       try {
         await next();
       } catch (e) {
@@ -529,11 +533,11 @@ exports.default = async function server() {
         console.log('Error', e.message);
         ctx.body = 'There was an error. Please try again later.';
       }
-    })
+    }
 
     // It's useful to see how long a request takes to respond.  Add the
     // timing to a HTTP Response header
-    .use(async (ctx, next) => {
+    ).use(async (ctx, next) => {
       const start = _microseconds2.default.now();
       await next();
       const end = _microseconds2.default.parse(_microseconds2.default.since(start));
@@ -783,13 +787,13 @@ own reducers for store state outside of Apollo
 
 exports.default = createNewStore;
 
-var _redux = __webpack_require__(52);
+var _redux = __webpack_require__(51);
 
-var _reduxThunk = __webpack_require__(53);
+var _reduxThunk = __webpack_require__(52);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _seamlessImmutable = __webpack_require__(54);
+var _seamlessImmutable = __webpack_require__(53);
 
 var _seamlessImmutable2 = _interopRequireDefault(_seamlessImmutable);
 
@@ -1240,31 +1244,27 @@ const LoginText = () => _react2.default.createElement(
     src: _login2.default,
     srcSet: `${_login2.default} 1x, ${_login2x2.default} 2x, ${_login3x2.default} 3x`,
     className: _styles2.default.oc_login_button_text,
-    alt: 'Login'
-  })
+    alt: 'Login' })
 );
 
 let Box = class Box extends _react2.default.Component {
   render() {
     return _react2.default.createElement(
       'div',
-      { className: _styles2.default['combined-shape'] },
+      { className: _styles2.default.oc_login_box },
       _react2.default.createElement('img', {
         src: _screenShot20170211At70842Pm2.default,
         srcSet: `${_screenShot20170211At70842Pm2.default} 1x, ${_screenShot20170211At70842Pm2x2.default} 2x, ${_screenShot20170211At70842Pm3x2.default} 3x`,
         className: _styles2.default['screen-shot-2017-02-11-at-7-08-42-pm'],
-        alt: 'Oktopus'
-      }),
+        alt: 'Oktopus' }),
       _react2.default.createElement(
         'div',
         { className: _styles2.default.oc_login_inputs },
         _react2.default.createElement(_TextField2.default, {
-          placeholder: 'Email Field'
-        }),
+          placeholder: 'Email Field' }),
         _react2.default.createElement(_TextField2.default, {
           placeholder: 'Password Field',
-          type: 'password'
-        })
+          type: 'password' })
       ),
       _react2.default.createElement(
         'div',
@@ -1287,8 +1287,7 @@ let Box = class Box extends _react2.default.Component {
           _react2.default.createElement(
             _Button2.default,
             {
-              className: _styles2.default.oc_login_button
-            },
+              className: _styles2.default.oc_login_button },
             _react2.default.createElement(LoginText, null)
           )
         ),
@@ -1298,8 +1297,7 @@ let Box = class Box extends _react2.default.Component {
           _react2.default.createElement(
             _Button2.default,
             {
-              className: _styles2.default.oc_login_forgot
-            },
+              className: _styles2.default.oc_login_forgot },
             'Forgot?'
           )
         )
@@ -1354,19 +1352,24 @@ let Login = class Login extends _react2.default.Component {
   render() {
     return _react2.default.createElement(
       'div',
-      { className: _styles2.default.rectangle },
+      { className: _styles2.default.oc_login_container },
       _react2.default.createElement(
         'div',
-        { className: _styles2.default['topbar-bg'] },
-        _react2.default.createElement('img', { src: _oktopusLogo2.default, alt: 'Oktopus', className: _styles2.default['oktopus-logo'] }),
-        _react2.default.createElement('img', { src: _pagecenter3x2.default, alt: 'Signup or login', className: _styles2.default['pagecenter-1'] })
+        { className: _styles2.default.oc_container_topbar },
+        _react2.default.createElement('img', { src: _oktopusLogo2.default, alt: 'Oktopus', className: _styles2.default.oc_logo }),
+        _react2.default.createElement('img', { src: _pagecenter3x2.default, alt: 'Signup or login', className: _styles2.default.oc_login_title }),
+        _react2.default.createElement('img', { src: _oktopusLogo2.default, alt: 'Dummy for justify', className: _styles2.default.oc_logo, style: { visibility: 'hidden' } })
       ),
       _react2.default.createElement(
         'div',
-        { className: _styles2.default['your-website-is-about'] },
-        'Your website is about to be reborn.'
-      ),
-      _react2.default.createElement(_box2.default, null)
+        { className: _styles2.default.oc_container_content },
+        _react2.default.createElement(
+          'div',
+          { className: _styles2.default.oc_login_title2 },
+          'Where platforms are born.'
+        ),
+        _react2.default.createElement(_box2.default, null)
+      )
     );
   }
 };
@@ -1411,13 +1414,13 @@ module.exports = __webpack_require__.p + "assets/img/1-pagecenter@3x.bfe1bfcd0d6
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/img/face-book.16a2623d4090227f26e3f60032ae1fc6.svg";
+module.exports = __webpack_require__.p + "assets/img/face-book.623535dc8853a8988d0f71f360e560f0.svg";
 
 /***/ }),
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/img/linked-in.bbb5d934e245bd3fbb247b80ccf85e09.svg";
+module.exports = __webpack_require__.p + "assets/img/linked-in.03523a72e82c3723f14400fd80a04d74.svg";
 
 /***/ }),
 /* 26 */
@@ -1564,32 +1567,31 @@ module.exports = require("path");
 module.exports = require("react-dom/server");
 
 /***/ }),
-/* 50 */,
-/* 51 */
+/* 50 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router");
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux");
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports = require("seamless-immutable");
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(7);

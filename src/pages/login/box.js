@@ -20,30 +20,26 @@ const LoginText = () => (
       src={loginText}
       srcSet={`${loginText} 1x, ${login2xText} 2x, ${login3xText} 3x`}
       className={sass.oc_login_button_text}
-      alt="Login"
-    />
+      alt="Login" />
   </div>
 );
 
 class Box extends React.Component {
   render() {
     return (
-      <div className={sass['combined-shape']}>
+      <div className={sass.oc_login_box}>
         <img
           src={oktopusLoginLogo1x}
           srcSet={`${oktopusLoginLogo1x} 1x, ${oktopusLoginLogo2x} 2x, ${oktopusLoginLogo3x} 3x`}
           className={sass['screen-shot-2017-02-11-at-7-08-42-pm']}
-          alt="Oktopus"
-        />
+          alt="Oktopus" />
         <div className={sass.oc_login_inputs}>
           <TextField
-            placeholder="Email Field"
-          />
+            placeholder="Email Field" />
 
           <TextField
             placeholder="Password Field"
-            type="password"
-          />
+            type="password" />
         </div>
         <div className={sass.oc_login_socials}>
           <img
@@ -59,15 +55,13 @@ class Box extends React.Component {
         <div className={sass.oc_login_inputs}>
           <div>
             <Button
-              className={sass.oc_login_button}
-            >
+              className={sass.oc_login_button}>
               <LoginText />
             </Button>
           </div>
           <div>
             <Button
-              className={sass.oc_login_forgot}
-            >
+              className={sass.oc_login_forgot}>
               Forgot?
             </Button>
           </div>

@@ -1,41 +1,77 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400,500");
 
-$apricot: #f8a36f;
+$dark-blue: #10394a;
+$dark-grey: #666666;
+$white-blue: #f6f8fc;
+$white: #ffffff;
+$red-stop: #ff3d3c;
 $grapefruit: #f56868;
-$white: #e1e1e1;
-$white2: #ffffff;
-$white-two: #ffffff;
+$apricot: #f8a36f;
+$sun-yellow: #ffcd00;
+$green-go: #00d3bb;
+$sky-blue: #00c2ff;
+$vivid-purple: #9a00ff;
+$light-grey: #e1e1e1;
+$facebook-blue: #1751c8;
+$linkedin-blue: #1c97fb;
+
 $aquamarine-two: #00d3bb;
 $brownish-grey: #666666;
 $black-50: rgba(0, 0, 0, 0.5);
 $blood-orange: #ff4a00;
 
-/* login */
+.oc_container {
+  display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;           /* TWEENER - IE 10 */
+  display: -webkit-flex;          /* NEW - Chrome */
+  display: flex;
 
-.rectangle {
-  position: relative;
-  width: 1438.6px;
-  height: 1022.1px;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+
+  width: 100%;
+  height: auto;
+}
+.oc_container_apricot_grapefruit {
+  @extend .oc_container;
   background-image: linear-gradient(125deg, $apricot, $grapefruit);
 }
-.topbar-bg {
-  width: 1440px;
-  height: 42.8px;
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px 0 $white;
+.oc_container_white {
+  @extend .oc_container;
+  background-color: $white;
 }
-.oktopus-logo {
-  position: absolute;
-  left: 35px;
-  top: 7px;
-  width: 69px;
-  height: 30px;
+.oc_container_transparent {
+  @extend .oc_container;
+  background-color: transparent;
+}
+
+.oc_container_topbar {
+  @extend .oc_container_white;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 43px;
+}
+.oc_container_content {
+  @extend .oc_container_transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.oc_logo {
   object-fit: contain;
 }
-.pagecenter-1 {
-  position: absolute;
-  left: 628.5px;
-  top: 9px;
+
+/* login */
+
+.oc_login_container {
+  @extend .oc_container_apricot_grapefruit;
+  height: 1022px;
+}
+
+.oc_login_title {
   width: 183px;
   height: 25px;
   object-fit: contain;
@@ -48,31 +84,30 @@ $blood-orange: #ff4a00;
   letter-spacing: normal;
   text-align: center;
   color: $aquamarine-two;
-
-  .text-style-1 {
-    font-family: MisterBrown;
-    font-size: 25px;
-    font-weight: normal;
-    color: $brownish-grey;
-  }
 }
 
-.your-website-is-about {
-  position: absolute;
-  left: 457px;
-  top: 149.9px;
-  width: 526px;
-  height: 44px;
-  font-family: Montserrat-ExtraLight;
+.oc_login_title2 {
+  @extend .oc_container_transparent;
+  margin: 100px 0;
+  font-family: Montserrat;
   font-size: 31px;
   font-weight: 200;
-  line-height: 0.71;
   text-align: center;
-  color: #ffffff;
-  text-shadow: 0 4px 2px rgba(245, 104, 104, 0.63);
+  color: $white;
+  text-shadow: 0 1px 0 $grapefruit;
 }
 
 /* login box */
+
+.oc_login_box {
+  @extend .oc_container_content;
+  width: 215.3px;
+  height: 297.7px;
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: inset 0 0.2px 1px 0 $black-50;
+  border: solid 1px $white;
+}
 
 .oc_login_inputs {
   margin: 0 18px;
@@ -134,18 +169,6 @@ $blood-orange: #ff4a00;
   color: #2c2f30 !important;
 }
 
-.combined-shape {
-  position: absolute;
-  left: 612.1px;
-  top: 272.3px;
-  width: 215.3px;
-  height: 297.7px;
-  border-radius: 5px;
-  background-color: $white-two;
-  box-shadow: inset 0 0.2px 1px 0 $black-50;
-  border: solid 1px $white-two;
-}
-
 .screen-shot-2017-02-11-at-7-08-42-pm {
   position: relative;
   display: block;
@@ -162,7 +185,7 @@ $blood-orange: #ff4a00;
   display: block;
   margin: auto;
   width: 178.7px;
-  height: 0px;
+  height: 0;
   box-shadow: 0 0.5px 1px 0 rgba(196, 196, 196, 0.5);
   border: solid 0.5px $blood-orange;
 }
