@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6c11df2-0f19-4182-80f5-a0881968deed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGELOG" afterPath="$PROJECT_DIR$/CHANGELOG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/server_dev.js" afterPath="$PROJECT_DIR$/dist/server_dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/server_dev.js.map" afterPath="$PROJECT_DIR$/dist/server_dev.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/login/box.js" afterPath="$PROJECT_DIR$/src/pages/login/box.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/login/img/face-book.svg" afterPath="$PROJECT_DIR$/src/pages/login/img/face-book.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/login/img/linked-in.svg" afterPath="$PROJECT_DIR$/src/pages/login/img/linked-in.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/login/index.js" afterPath="$PROJECT_DIR$/src/pages/login/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/login/styles.scss" afterPath="$PROJECT_DIR$/src/pages/login/styles.scss" />
+    <list default="true" id="d6c11df2-0f19-4182-80f5-a0881968deed" name="Default" comment="# update styles and sources for a responsive site">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/chunk-manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/css/style.705b89f714694020e8bbabe7670e4ec3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/css/style.705b89f714694020e8bbabe7670e4ec3.css.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/css/style.705b89f714694020e8bbabe7670e4ec3.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/1-pagecenter@3x.0a8827884630d6a3648fbda5d2153576.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/1-pagecenter@3x.0a8827884630d6a3648fbda5d2153576.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/1-pagecenter@3x.0a8827884630d6a3648fbda5d2153576.png.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/face-book.bfe9e908ae4154a8626147694d7e3031.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/face-book.bfe9e908ae4154a8626147694d7e3031.svg.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/face-book.bfe9e908ae4154a8626147694d7e3031.svg.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/linked-in.545802034c24beb61d36dafbf6c7033c.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/linked-in.545802034c24beb61d36dafbf6c7033c.svg.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/linked-in.545802034c24beb61d36dafbf6c7033c.svg.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login.3879d9e177704a5621f0a8b6c270dcd2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login.3879d9e177704a5621f0a8b6c270dcd2.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login.3879d9e177704a5621f0a8b6c270dcd2.png.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login@2x.39b1de6f5ca0495fbe0756a1c618a399.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login@2x.39b1de6f5ca0495fbe0756a1c618a399.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login@2x.39b1de6f5ca0495fbe0756a1c618a399.png.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login@3x.7724d1676675e033e6c7a01ac25ecdb1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login@3x.7724d1676675e033e6c7a01ac25ecdb1.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/login@3x.7724d1676675e033e6c7a01ac25ecdb1.png.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/oktopus-logo.2bdf1bd4c2db9ac20f6729189c2060e2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/oktopus-logo.2bdf1bd4c2db9ac20f6729189c2060e2.svg.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/oktopus-logo.2bdf1bd4c2db9ac20f6729189c2060e2.svg.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/oktopus.bd839001bf12e3ebdbd3c74ea320b4ac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/oktopus.bd839001bf12e3ebdbd3c74ea320b4ac.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/screen-shot-2017-02-11-at-7-08-42-pm.0d73e6bb12891a51608450c4c045fdbf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/screen-shot-2017-02-11-at-7-08-42-pm.0d73e6bb12891a51608450c4c045fdbf.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/screen-shot-2017-02-11-at-7-08-42-pm@2x.f1a558a66f39253ac2f1a1d21f54bcdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/screen-shot-2017-02-11-at-7-08-42-pm@2x.f1a558a66f39253ac2f1a1d21f54bcdb.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/screen-shot-2017-02-11-at-7-08-42-pm@3x.dcca8ec9f995c5953b8d9c4c8364adda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/assets/img/screen-shot-2017-02-11-at-7-08-42-pm@3x.dcca8ec9f995c5953b8d9c4c8364adda.png.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/browser.a9029347c818fb64116a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/browser.a9029347c818fb64116a.js.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/browser.a9029347c818fb64116a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/manifest.d41d8cd98f00b204e980.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/manifest.d41d8cd98f00b204e980.js.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/manifest.d41d8cd98f00b204e980.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/vendor.61ff53fb7f02ca2af41a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/vendor.61ff53fb7f02ca2af41a.js.br" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/vendor.61ff53fb7f02ca2af41a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/server_dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/server_dev.js.map" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/CHANGELOG">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -57,21 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="567">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/login/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -148,10 +177,10 @@
         <option value="$PROJECT_DIR$/kit/lib/env.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/CHANGELOG" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/pages/login/styles.scss" />
         <option value="$PROJECT_DIR$/src/pages/login/box.js" />
         <option value="$PROJECT_DIR$/src/pages/login/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -308,7 +337,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="add_unversioned_files" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -434,7 +463,7 @@
       <updated>1497353207306</updated>
       <workItem from="1497353208882" duration="1560000" />
       <workItem from="1498037514670" duration="20259000" />
-      <workItem from="1498455235099" duration="10300000" />
+      <workItem from="1498455235099" duration="10708000" />
     </task>
     <task id="LOCAL-00001" summary="# initial commit">
       <created>1497353772973</created>
@@ -527,11 +556,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498486385233</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="# update styles and sources for a responsive site">
+      <created>1498486477432</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1498486477432</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32119000" />
+    <option name="totallyTimeSpent" value="32527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -539,14 +575,14 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16535018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.49722" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.49499735" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.49722" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29326424" sideWeight="0.507109" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29326424" sideWeight="0.50921535" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47749197" sideWeight="0.49086577" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29326424" sideWeight="0.49289098" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29326424" sideWeight="0.49078462" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -639,9 +675,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10740">
           <caret line="716" column="1" lean-forward="false" selection-start-line="716" selection-start-column="1" selection-end-line="716" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -811,9 +845,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="716" column="1" lean-forward="false" selection-start-line="716" selection-start-column="1" selection-end-line="716" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -856,23 +888,7 @@
     <entry file="file://$PROJECT_DIR$/CHANGELOG">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -898,10 +914,26 @@
     <entry file="file://$PROJECT_DIR$/src/pages/login/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
