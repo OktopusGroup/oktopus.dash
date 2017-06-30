@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import TopBar from 'src/components/topBar';
 import Box from './box';
 
-import oktopusLogo from './img/oktopus-logo.svg';
-import pagecenter1 from './img/1-pagecenter@3x.png';
+/* Local */
+
 import sass from './styles.scss';
+
+// ----------------------
 
 class Login extends React.Component {
   render() {
     return (
       <div className={sass.oc_login_container}>
-        <div className={sass.oc_container_topbar}>
-          <img src={oktopusLogo} alt="Oktopus" className={sass.oc_logo} />
-          <img src={pagecenter1} alt="Signup or login" className={sass.oc_login_title} />
-          <img src={oktopusLogo} alt="Dummy for justify" className={sass.oc_logo} style={{ visibility: 'hidden' }} />
-        </div>
+        <TopBar profile={null} />
+
         <div className={sass.oc_container_content}>
-          <div className={sass.oc_login_title2}>
+          <div className={sass.oc_login_where_platforms_are_born}>
             Where platforms are born.
           </div>
+
           <Box />
         </div>
       </div>

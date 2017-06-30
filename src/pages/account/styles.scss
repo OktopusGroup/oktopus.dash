@@ -7,7 +7,7 @@
   height: 1022px;
 }
 
-.oc_login_where_platforms_are_born {
+.oc_login_title2 {
   @extend .oc_container_transparent;
   margin: 100px 0;
   font-family: Montserrat;
@@ -62,8 +62,7 @@
   }
 }
 
-.oc_login_button_submit {
-  @extend .oc_button;
+.oc_login_button {
   width: 137.1px;
   height: 34.3px;
   padding: 0 !important;
@@ -81,8 +80,7 @@
   color: $white;
 }
 //TODO: fix css order problem
-.oc_login_button_forgot {
-  @extend .oc_button;
+.oc_login_forgot {
   width: 87px !important;
   height: 13px !important;
   font-family: Montserrat !important;
@@ -92,7 +90,7 @@
   color: #2c2f30 !important;
 }
 
-.oc_login_logo {
+.screen-shot-2017-02-11-at-7-08-42-pm {
   position: relative;
   display: block;
   /* left: 24.1px; */
@@ -101,4 +99,14 @@
   width: 133.1px;
   height: 42.9px;
   object-fit: contain;
+}
+
+.line {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 178.7px;
+  height: 0;
+  box-shadow: 0 0.5px 1px 0 rgba(196, 196, 196, 0.5);
+  border: solid 0.5px $blood-orange;
 }

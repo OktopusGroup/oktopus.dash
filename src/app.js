@@ -16,6 +16,7 @@ import {
 
 // Pages
 import Login from 'src/pages/login';
+import Account from 'src/pages/account';
 
 // Material Design for React
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -74,11 +75,13 @@ export default () => (
     <ul>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/page/login">Login</Link></li>
+      <li><Link to="/page/account">Account</Link></li>
     </ul>
     <MuiThemeProvider theme={muiTheme}>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/page/login" component={Login} />
+        <Route path="/page/account" component={Account} />
         <Route component={WhenNotFound} />
       </Switch>
     </MuiThemeProvider>
