@@ -1,4 +1,4 @@
-@import "src/styles.global.scss";
+@import "src/styles.scss";
 
 .oc_container_topbar {
   @extend .oc_container_white;
@@ -35,6 +35,7 @@
 
 .oc_account_button_group_right {
   @extend .oc_button_group;
+  position: relative;
   margin-right: 2em;
   width: 4em;
 }
@@ -50,4 +51,35 @@
 
 .oc_account_button_title {
   margin-left: 0.2em;
+}
+
+/* account menu */
+
+.oc_account_menu {
+  @extend .oc_container_content;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 228.2px;
+  height: 352.2px;
+  border-radius: 3px;
+  background-color: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.oc_account_menu_account_name {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  color: $dark-grey;
+}
+.oc_account_menu_item {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  color: $dark-grey;
 }

@@ -3,24 +3,28 @@ import PropTypes from 'prop-types';
 
 /* Local */
 
-import sass from 'src/styles.global.scss';
+import sass from 'src/styles.scss';
 
 // ----------------------
 
 class Button extends React.Component {
   static defaultProps = {
-    className: sass.oc_button,
     children: null,
+    className: sass.oc_button,
+    tabIndex: 0,
+    onClick: null,
   };
 
   render() {
     const {
-      className,
       children,
+      className,
+      tabIndex,
+      onClick,
     } = this.props;
 
     return (
-      <span className={className}>
+      <span className={className} role="button" aria-pressed="true" tabIndex={tabIndex} onClick={onClick}>
         {children}
       </span>
     );
@@ -30,6 +34,11 @@ class Button extends React.Component {
 Button.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  tabIndex: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+  ]),
+  onClick: PropTypes.func,
 };
 
 export default Button;

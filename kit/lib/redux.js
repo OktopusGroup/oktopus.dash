@@ -16,13 +16,18 @@ import Immutable from 'seamless-immutable';
 
 /* Local */
 
+// Reducers
+import accountMenuShowed from 'src/reducers/accountMenuShowed';
+
 // ----------------------
 
 // Detect if we're both in the browser, AND we have dehydrated state
 const hasState = !!(!SERVER && window.__STATE__);
 
 // All reducers, in one array
-const reducers = [/* TODO add custom reducers */];
+const reducers = [
+  accountMenuShowed,
+];
 
 // Helper function that 'unwinds' the { reducerKey {state, reducer} } format
 // from each imported reducer, and either returns the `reducer` function (if

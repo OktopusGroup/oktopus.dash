@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import TopBar from 'src/components/topBar';
-
 /* Local */
+
+import TopBar from 'src/components/topBar';
 
 import sass from './styles.scss';
 

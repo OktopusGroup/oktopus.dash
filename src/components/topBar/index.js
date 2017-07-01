@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import LoginNeeded from './loginNeeded';
-import Account from './account';
-
 /* Local */
+
+import UnloggedinBar from './unloggedinBar';
+import AccountBar from './accountBar';
+
+// ----------------------
 
 class TopBar extends React.Component {
   static defaultProps = {
@@ -16,7 +18,7 @@ class TopBar extends React.Component {
       profile,
     } = this.props;
 
-    const content = profile ? <Account /> : <LoginNeeded />;
+    const content = profile ? <AccountBar /> : <UnloggedinBar />;
 
     return (
       <div>

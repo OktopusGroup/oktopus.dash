@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/* Local */
+
 import TopBar from 'src/components/topBar';
 import Box from './box';
-
-/* Local */
 
 import sass from './styles.scss';
 

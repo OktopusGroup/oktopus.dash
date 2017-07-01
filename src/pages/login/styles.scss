@@ -1,6 +1,21 @@
-@import "src/styles.global.scss";
+@import "src/styles.scss";
 
 /* login */
+
+.oc_login_title {
+  width: 183px;
+  height: 25px;
+  object-fit: contain;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $aquamarine-two;
+}
 
 .oc_login_container {
   @extend .oc_container_apricot_grapefruit;
