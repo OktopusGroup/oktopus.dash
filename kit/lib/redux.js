@@ -17,7 +17,7 @@ import Immutable from 'seamless-immutable';
 /* Local */
 
 // Reducers
-import accountMenuShowed from 'src/reducers/accountMenuShowed';
+import accountMenu from 'src/reducers/accountMenu';
 
 // ----------------------
 
@@ -26,7 +26,7 @@ const hasState = !!(!SERVER && window.__STATE__);
 
 // All reducers, in one array
 const reducers = [
-  accountMenuShowed,
+  accountMenu,
 ];
 
 // Helper function that 'unwinds' the { reducerKey {state, reducer} } format

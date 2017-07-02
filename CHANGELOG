@@ -1,3 +1,13 @@
+0.5.0 - 2017-07-02
+——————————————————————————————————
+* Bumps to ReactQL kit v1.12.0
+* Fixes linting issues
+* Rewrites stateless components as 'pure' components
+* Refactors `accountMenuShowed` reducer as `accountMenu`
+* Replaces `accountMenuShowed -> showAccountMenu` with a toggle function
+* Adds commentary to imports to better understand the layout
+* Removes redundant `propTypes` where not necessary
+
 0.4.3 - 2017-07-02
 ——————————————————————————————————
 * Adds account menu

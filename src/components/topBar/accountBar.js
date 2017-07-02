@@ -4,12 +4,17 @@ import { connect } from 'react-redux';
 
 /* Local */
 
-import showAccountMenu from 'src/actions/showAccountMenu';
+/* actions */
+import { toggleMenu } from 'src/actions/accountMenu';
 
+/* components */
 import Button from 'src/components/button';
 import AccountMenu from './accountMenu';
 
+/* styles */
 import sass from './styles.scss';
+
+/* images */
 import oktopusLogo from './img/oktopus-logo.svg';
 import eyeIcon from './img/icon-eye3x.png';
 import playIcon from './img/icon-play@3x.png';
@@ -48,64 +53,49 @@ const MyPicture = () => (
   </div>
 );
 
-@connect(state => ({ accountMenuShowed: state.accountMenuShowed }))
+@connect(state => ({ accountMenu: state.accountMenu }))
 class AccountBar extends React.Component {
   static defaultProps = {
     profile: null,
-    accountMenuShowed: false,
+    accountMenu: {},
   };
 
-  onToggleAccountMenu = () => {
-    const {
-      dispatch,
-      accountMenuShowed,
-    } = this.props;
+  static propTypes = {
+    profile: PropTypes.object.isRequired,
+    accountMenu: PropTypes.object.isRequired,
+  }
 
-    dispatch(showAccountMenu(!accountMenuShowed));
+  onToggleAccountMenu = () => {
+    this.props.dispatch(toggleMenu());
   }
 
   render() {
-    const {
-      profile,
-      accountMenuShowed,
-    } = this.props;
-
-    const accountMenu = accountMenuShowed ?
-      <AccountMenu profile={profile} /> : null;
+    const accountMenu = this.props.accountMenu.activated ?
+      <AccountMenu profile={this.props.profile} /> : null;
 
     return (
       <div className={sass.oc_topbar}>
-        <img src={oktopusLogo} alt="Oktopus" className={sass.oc_logo}/>
-
+        <img src={oktopusLogo} alt="Oktopus" className={sass.oc_logo} />
         <div className={sass.oc_account_button_group_center}>
           <Button className={sass.oc_account_button}>
             <PreviewIcon />
           </Button>
-
           <Button className={sass.oc_account_button}>
             <LaunchIcon />
           </Button>
         </div>
-
         <div className={sass.oc_account_button_group_right}>
           <Button className={sass.oc_account_button}>
             <BellIcon />
           </Button>
-
           <Button className={sass.oc_account_button} onClick={this.onToggleAccountMenu}>
             <MyPicture />
           </Button>
-
           {accountMenu}
         </div>
       </div>
     );
   }
 }
-
-AccountBar.propTypes = {
-  profile: PropTypes.object.isRequired,
-  accountMenuShowed: PropTypes.bool,
-};
 
 export default AccountBar;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import TextField from 'material-ui/TextField';
 import Button from 'src/components/button';
 
@@ -27,56 +26,47 @@ const LoginText = () => (
   </div>
 );
 
-class Box extends React.Component {
-  render() {
-    return (
-      <div className={sass.oc_login_box}>
-        <img
-          src={oktopusLoginLogo1x}
-          srcSet={`${oktopusLoginLogo1x} 1x, ${oktopusLoginLogo2x} 2x, ${oktopusLoginLogo3x} 3x`}
-          className={sass.oc_login_logo}
-          alt="Oktopus" />
+export default () => (
+  <div className={sass.oc_login_box}>
+    <img
+      src={oktopusLoginLogo1x}
+      srcSet={`${oktopusLoginLogo1x} 1x, ${oktopusLoginLogo2x} 2x, ${oktopusLoginLogo3x} 3x`}
+      className={sass.oc_login_logo}
+      alt="Oktopus" />
 
-        <div className={sass.oc_login_inputs}>
-          <TextField
-            placeholder="Email Field" />
+    <div className={sass.oc_login_inputs}>
+      <TextField
+        placeholder="Email Field" />
 
-          <TextField
-            placeholder="Password Field"
-            type="password" />
-        </div>
+      <TextField
+        placeholder="Password Field"
+        type="password" />
+    </div>
 
-        <div className={sass.oc_login_socials}>
-          <img
-            src={faceBook}
-            className={sass.face_book}
-            alt="Facebook" />
+    <div className={sass.oc_login_socials}>
+      <img
+        src={faceBook}
+        className={sass.face_book}
+        alt="Facebook" />
 
-          <img
-            src={linkedIn}
-            className={sass.linked_in}
-            alt="Linked In" />
-        </div>
+      <img
+        src={linkedIn}
+        className={sass.linked_in}
+        alt="Linked In" />
+    </div>
 
-        <div className={sass.oc_login_inputs}>
-          <div>
-            <Button className={sass.oc_login_button_submit}>
-              <LoginText />
-            </Button>
-          </div>
-
-          <div>
-            <Button className={sass.oc_login_button_forgot}>
-              Forgot?
-            </Button>
-          </div>
-        </div>
+    <div className={sass.oc_login_inputs}>
+      <div>
+        <Button className={sass.oc_login_button_submit}>
+          <LoginText />
+        </Button>
       </div>
-    );
-  }
-}
 
-Box.propTypes = {
-};
-
-export default Box;
+      <div>
+        <Button className={sass.oc_login_button_forgot}>
+          Forgot?
+        </Button>
+      </div>
+    </div>
+  </div>
+);
