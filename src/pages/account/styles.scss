@@ -1,3 +1,10 @@
 @import "src/styles.scss";
 
 /* account */
+
+.oc_account_container {
+  @include container_white;
+  @include vertical_align;
+  justify-content: flex-start;
+  height: 1022px;
+}

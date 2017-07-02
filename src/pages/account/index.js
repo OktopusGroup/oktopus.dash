@@ -12,7 +12,7 @@ import sass from './styles.scss';
 class Account extends React.Component {
   render() {
     return (
-      <div className={sass.oc_container_white}>
+      <div className={sass.oc_account_container}>
         <TopBar profile={{
           name: 'test',
         }} />

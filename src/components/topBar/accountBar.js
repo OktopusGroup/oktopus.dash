@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 /* Local */
 
+import showAccountMenu from 'src/actions/showAccountMenu';
+
 import Button from 'src/components/button';
 import AccountMenu from './accountMenu';
 
@@ -13,10 +15,6 @@ import eyeIcon from './img/icon-eye3x.png';
 import playIcon from './img/icon-play@3x.png';
 import bellIcon from './img/norm.svg';
 import myPic from './img/myPic.jpg';
-
-// actions
-
-import showAccountMenu from 'src/actions/showAccountMenu';
 
 // ----------------------
 
@@ -73,10 +71,10 @@ class AccountBar extends React.Component {
     } = this.props;
 
     const accountMenu = accountMenuShowed ?
-      <AccountMenu showed={accountMenuShowed} profile={profile} /> : null;
+      <AccountMenu profile={profile} /> : null;
 
     return (
-      <div className={sass.oc_container_topbar}>
+      <div className={sass.oc_topbar}>
         <img src={oktopusLogo} alt="Oktopus" className={sass.oc_logo}/>
 
         <div className={sass.oc_account_button_group_center}>
@@ -106,7 +104,7 @@ class AccountBar extends React.Component {
 }
 
 AccountBar.propTypes = {
-  profile: PropTypes.object,
+  profile: PropTypes.object.isRequired,
   accountMenuShowed: PropTypes.bool,
 };
 

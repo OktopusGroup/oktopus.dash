@@ -18,25 +18,28 @@
 }
 
 .oc_login_container {
-  @extend .oc_container_apricot_grapefruit;
+  @include container_apricot_grapefruit;
+  @include vertical_align;
+  justify-content: flex-start;
   height: 1022px;
 }
 
 .oc_login_where_platforms_are_born {
-  @extend .oc_container_transparent;
+  @include horizontal_container;
   margin: 100px 0;
   font-family: Montserrat;
   font-size: 31px;
   font-weight: 200;
-  text-align: center;
   color: $white;
+  text-align: center;
   text-shadow: 0 1px 0 $grapefruit;
 }
 
 /* login box */
 
 .oc_login_box {
-  @extend .oc_container_content;
+  @include vertical_container;
+
   width: 215.3px;
   height: 297.7px;
   border-radius: 5px;
@@ -46,8 +49,7 @@
 }
 
 .oc_login_inputs {
-  margin: 0 18px;
-  text-align: center;
+  @include vertical_container;
 
   input {
     padding: 10px 0 7px 0;
@@ -78,10 +80,11 @@
 }
 
 .oc_login_button_submit {
-  @extend .oc_button;
+  @include button;
+  justify-content: center;
   width: 137.1px;
   height: 34.3px;
-  padding: 0 !important;
+  padding: 0;
   border-radius: 2px;
   background-image: linear-gradient(to bottom, $apricot, $grapefruit);
   box-shadow: 0 1px 1px 0 rgba(196, 196, 196, 0.5);
@@ -95,16 +98,17 @@
   text-align: center;
   color: $white;
 }
-//TODO: fix css order problem
+
 .oc_login_button_forgot {
-  @extend .oc_button;
-  width: 87px !important;
-  height: 13px !important;
-  font-family: Montserrat !important;
-  font-size: 10px !important;
-  font-weight: 300 !important;
-  text-align: center !important;
-  color: #2c2f30 !important;
+  @include button;
+  justify-content: center;
+  width: 87px;
+  height: 13px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: center;
+  color: #2c2f30;
 }
 
 .oc_login_logo {

@@ -9,7 +9,7 @@ import loginOrSignup2x from './img/1-pagecenter@2x.png';
 import loginOrSignup3x from './img/1-pagecenter@3x.png';
 
 export default () => (
-  <div className={sass.oc_container_topbar}>
+  <div className={sass.oc_topbar}>
     <img src={oktopusLogo} alt="Oktopus" className={sass.oc_logo} />
     <img
       className={sass.oc_login_title}

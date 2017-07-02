@@ -16,7 +16,7 @@ class Login extends React.Component {
       <div className={sass.oc_login_container}>
         <TopBar profile={null} />
 
-        <div className={sass.oc_container_content}>
+        <div className={sass.oc_vertical_container}>
           <div className={sass.oc_login_where_platforms_are_born}>
             Where platforms are born.
           </div>

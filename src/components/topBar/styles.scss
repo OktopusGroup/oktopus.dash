@@ -1,9 +1,8 @@
 @import "src/styles.scss";
 
-.oc_container_topbar {
-  @extend .oc_container_white;
-  -webkit-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+.oc_topbar {
+  @include container_white;
+  @include horizontal_align;
   align-items: center;
   justify-content: space-between;
   height: 43px;
@@ -29,20 +28,19 @@
 /* account */
 
 .oc_account_button_group_center {
-  @extend .oc_button_group;
+  @include button_group;
   width: 11em;
 }
 
 .oc_account_button_group_right {
-  @extend .oc_button_group;
+  @include button_group;
   position: relative;
   margin-right: 2em;
   width: 4em;
 }
 
 .oc_account_button {
-  @extend .oc_button;
-
+  @include button;
   font-family: Montserrat;
   font-size: 13px;
   font-weight: 300;
@@ -56,7 +54,8 @@
 /* account menu */
 
 .oc_account_menu {
-  @extend .oc_container_content;
+  @include horizontal_container;
+  align-items: flex-start;
   position: absolute;
   top: 100%;
   right: 0;
@@ -68,18 +67,47 @@
 
   ul {
     list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: .5em;
   }
 }
 
 .oc_account_menu_account_name {
+  @include horizontal_container;
+  justify-content: flex-start;
   font-family: Montserrat;
   font-size: 15px;
   font-weight: 500;
   color: $dark-grey;
+
+  img {
+    width: 2.5em;
+    margin-right: 0.5em;
+  }
 }
 .oc_account_menu_item {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 300;
-  color: $dark-grey;
+  color: $light-grey;
+
+  &:hover {
+    color: $dark-grey;
+  }
+}
+
+.oc_logout_button_text {
+  @include horizontal_container;
+
+  width: 107.5px;
+  height: 26.1px;
+  border-radius: 100px;
+  background-image: linear-gradient(104deg, $apricot, $grapefruit);
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  color: $white;
 }

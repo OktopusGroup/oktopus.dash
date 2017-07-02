@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import UnloggedinBar from './unloggedinBar';
 import AccountBar from './accountBar';
 
+import sass from './styles.scss';
+
 // ----------------------
 
 class TopBar extends React.Component {
@@ -18,10 +20,10 @@ class TopBar extends React.Component {
       profile,
     } = this.props;
 
-    const content = profile ? <AccountBar /> : <UnloggedinBar />;
+    const content = profile ? <AccountBar profile={profile} /> : <UnloggedinBar />;
 
     return (
-      <div>
+      <div className={sass.oc_horizontal_container}>
         {content}
       </div>
     );
